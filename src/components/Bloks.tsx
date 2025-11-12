@@ -1,5 +1,3 @@
-import React from "react";
-import styled from "styled-components";
 import bag from "../image/bag.svg";
 import jois from "../image/jois.svg";
 import book from "../image/book.svg";
