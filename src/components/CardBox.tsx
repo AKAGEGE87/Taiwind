@@ -2,23 +2,23 @@ import image from "../image/bitmap.png";
 
 const CardBox = () => {
   return (
-    <div className="bg-[#1C204B] rounded-[10px] font-[Rubik]">
-      <div className="pt-[37px] pl-[32px] w-[255px] flex flex-col items-start bg-[#5747EA]  rounded-[10px]">
+    <div className="bg-[#1C204B] rounded-[20px] overflow-hidden">
+      <div className="bg-[#5747EA] p-8 rounded-[20px] flex sm:flex-col gap-6">
         <img
           src={image}
-          alt=""
-          className="rounded-full border-2 border-white mb-[43px] w-[78px] h-[78px]"
+          className="rounded-full w-[70px] h-[70px] border-2 border-white"
         />
-
-        <h3 className="text-[#BBC0FF] text-[15px] ">Report for</h3>
-        <h2 className="text-white text-[40px] leading-[40px] text-left mb-[80px]">
-          Jeremy Robson
-        </h2>
+        <div>
+          <p className="text-[#BBC0FF] text-left text-[15px]">Report for</p>
+          <h2 className="text-white text-left text-[30px] sm:text-[40px] leading-none">
+            Jeremy Robson
+          </h2>
+        </div>
       </div>
-      <div className="flex flex-col text-[#7078C9] gap-[21px] items-start py-[26px] px-[32px] text-[18px] ">
-        <h2 className=" hover:text-white cursor-pointer">Daily</h2>
-        <h2 className=" hover:text-white cursor-pointer">Weekly</h2>
-        <h2 className=" hover:text-white cursor-pointer">Monthly</h2>
+      <div className="flex justify-between sm:flex-col gap-4 p-8 text-[#7078C9] text-[18px] items-start">
+        <p className="hover:text-white cursor-pointer">Daily</p>
+        <p className="hover:text-white cursor-pointer">Weekly</p>
+        <p className="hover:text-white cursor-pointer">Monthly</p>
       </div>
     </div>
   );
